@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Allow: /wp-json/
+Disallow: /*?add-to-cart=*
+
+Sitemap: https://www.stelluxgallery.com/sitemap_index.xml
