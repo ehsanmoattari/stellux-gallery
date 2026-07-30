@@ -5,13 +5,14 @@
         "wp": "latest"
     },
     "login": true,
+    "landingPage": "/",
     "siteOptions": {
         "blogname": "Stellux Gallery - Demo",
         "blogdescription": "Everyday Elegance, Timeless Shine",
         "permalink_structure": "/%postname%/",
         "show_on_front": "page",
-        "page_on_front": 1300,
-        "page_for_posts": 1177
+        "page_on_front": "1300",
+        "page_for_posts": "1177"
     },
     "steps": [
         {
@@ -102,15 +103,15 @@
             "step": "importWxr",
             "file": {
                 "resource": "url",
-                "url": "https://raw.githubusercontent.com/ehsanmoattari/stelluxgallery/main/content.xml"
+                "url": "https://raw.githubusercontent.com/ehsanmoattari/stellux-gallery/main/content.xml"
             }
         },
         {
             "step": "setSiteOptions",
             "options": {
                 "show_on_front": "page",
-                "page_on_front": 1300,
-                "page_for_posts": 1177
+                "page_on_front": "1300",
+                "page_for_posts": "1177"
             }
         }
     ]
