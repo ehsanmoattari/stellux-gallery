@@ -6,6 +6,9 @@
     },
     "login": true,
     "landingPage": "/",
+    "features": {
+        "networking": true
+    },
     "siteOptions": {
         "blogname": "Stellux Gallery - Demo",
         "blogdescription": "Everyday Elegance, Timeless Shine",
@@ -22,8 +25,8 @@
         {
             "step": "installTheme",
             "themeData": {
-                "resource": "wordpress.org/themes",
-                "slug": "kadence"
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/ehsanmoattari/stellux-gallery/main/kadence.zip"
             },
             "options": {
                 "activate": true
@@ -43,57 +46,7 @@
             "step": "installPlugin",
             "pluginData": {
                 "resource": "wordpress.org/plugins",
-                "slug": "rank-math-seo"
-            },
-            "options": {
-                "activate": true
-            }
-        },
-        {
-            "step": "installPlugin",
-            "pluginData": {
-                "resource": "wordpress.org/plugins",
                 "slug": "kadence-blocks"
-            },
-            "options": {
-                "activate": true
-            }
-        },
-        {
-            "step": "installPlugin",
-            "pluginData": {
-                "resource": "wordpress.org/plugins",
-                "slug": "kadence-starter-templates"
-            },
-            "options": {
-                "activate": true
-            }
-        },
-        {
-            "step": "installPlugin",
-            "pluginData": {
-                "resource": "wordpress.org/plugins",
-                "slug": "litespeed-cache"
-            },
-            "options": {
-                "activate": true
-            }
-        },
-        {
-            "step": "installPlugin",
-            "pluginData": {
-                "resource": "wordpress.org/plugins",
-                "slug": "shortpixel-image-optimiser"
-            },
-            "options": {
-                "activate": true
-            }
-        },
-        {
-            "step": "installPlugin",
-            "pluginData": {
-                "resource": "wordpress.org/plugins",
-                "slug": "payment-gateway-yekpay-for-woocommerce"
             },
             "options": {
                 "activate": true
