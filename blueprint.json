@@ -1,0 +1,127 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "preferredVersions": {
+        "php": "8.0",
+        "wp": "latest"
+    },
+    "login": true,
+    "siteOptions": {
+        "blogname": "Stellux Gallery - Demo",
+        "blogdescription": "Everyday Elegance, Timeless Shine",
+        "permalink_structure": "/%postname%/",
+        "show_on_front": "page",
+        "page_on_front": "1300",
+        "page_for_posts": "1177"
+    },
+    "steps": [
+        {
+            "step": "wp-cli",
+            "command": "wp site empty --yes"
+        },
+        {
+            "step": "installTheme",
+            "themeData": {
+                "resource": "wordpress.org/themes",
+                "slug": "kadence"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "woocommerce"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "rank-math-seo"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "kadence-blocks"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "kadence-starter-templates"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "litespeed-cache"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "shortpixel-image-optimiser"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "payment-gateway-yekpay-for-woocommerce"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "importWxr",
+            "file": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/ehsanmoattari/stelluxgallery/main/stelluxgallery.WordPress.2026-07-30.xml"
+            }
+        },
+        {
+            "step": "setSiteOptions",
+            "options": {
+                "show_on_front": "page",
+                "page_on_front": 1300,
+                "page_for_posts": 1177
+            }
+        },
+        {
+            "step": "runWpInstallationWizard",
+            "options": {
+                "siteTitle": "Stellux Gallery - Demo",
+                "siteDescription": "Everyday Elegance, Timeless Shine",
+                "siteUrl": "https://stelluxgallery.com",
+                "adminUser": "stelluxadmin",
+                "adminPassword": "Stellux@2026"
+            }
+        }
+    ]
+}
