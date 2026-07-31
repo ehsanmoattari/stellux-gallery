@@ -1,7 +1,7 @@
 {
     "$schema": "https://playground.wordpress.net/blueprint-schema.json",
     "preferredVersions": {
-        "php": "8.0",
+        "php": "latest",
         "wp": "latest"
     },
     "login": true,
@@ -24,7 +24,7 @@
         },
         {
             "step": "installTheme",
-            "themeData": {
+            "themeZipFile": {
                 "resource": "url",
                 "url": "https://raw.githubusercontent.com/ehsanmoattari/stellux-gallery/main/kadence.zip"
             },
